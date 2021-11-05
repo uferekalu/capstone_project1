@@ -6,7 +6,7 @@ function App() {
   const [input, setInput] = useState("");
 
   const handleInputChange = (event) => {
-    console.log(event.targe.value);
+    setInput(event.target.value)
   };
 
   return (
@@ -26,7 +26,7 @@ function App() {
         <input
           value={input}
           name="input"
-          onChange={(e) => setInput(e.target.value)}
+          onChange={handleInputChange}
         />
       </div>
     </div>
