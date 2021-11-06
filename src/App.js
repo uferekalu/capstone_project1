@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import logo from "./images/side-huzzle-img.png";
+import Navbar from './components/Navbar';
 
 function App() {
   const [input, setInput] = useState("");
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <div className="content-holder">
         {input ? (
           input
@@ -24,6 +26,7 @@ function App() {
       </div>
       <div className="text-input">
         <input
+
           value={input}
           name="input"
           onChange={handleInputChange}
