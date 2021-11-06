@@ -1,35 +1,26 @@
-import { useState } from "react";
-import "./App.css";
-import logo from "./images/side-huzzle-img.png";
+import './App.css';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import GlobalStyle from './globalStyles';
+import { Switch, Route } from 'react-router-dom';
+import About from './pages/About';
+import Store from './pages/Store';
+import Gmail from './pages/Gmail';
+import Images from './pages/Images';
 
 function App() {
-  const [input, setInput] = useState("");
-
-  const handleInputChange = (event) => {
-    setInput(event.target.value)
-  };
-
   return (
-    <div className="App">
-      <div className="content-holder">
-        {input ? (
-          input
-        ) : (
-          <img
-            style={{ height: "100px", width: "400px" }}
-            src={logo}
-            alt="side huzzle logo"
-          />
-        )}
-      </div>
-      <div className="text-input">
-        <input
-          value={input}
-          name="input"
-          onChange={handleInputChange}
-        />
-      </div>
-    </div>
+    <>
+      <GlobalStyle />
+      <Navbar />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/store' component={Store} />
+        <Route path='/gmail' component={Gmail} />
+        <Route path='/images' component={Images} />
+      </Switch>
+    </>
   );
 }
 
