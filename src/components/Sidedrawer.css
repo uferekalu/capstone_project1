@@ -1,0 +1,31 @@
+.sidedrawer {
+    width: 70%;
+    height: 100vh;
+    background: #8a8484;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+}
+.sidedrawer.show {
+    transform: translateX(0);
+}
+.sidedrawer__links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.sidedrawer__links  > li {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
