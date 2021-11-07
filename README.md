@@ -26,6 +26,7 @@ It consists of three basic sections:
 - The Side drawer section
 
 # LINK TO GITHUB
-
+https://github.com/uferekalu/capstone_project1
 
 # LIVE LINK
+https://team-arya.netlify.app/
