@@ -11,6 +11,7 @@ const Sidedrawer = ({ show, click }) => {
   return (
     <div className={sideDrawerClass.join(" ")}>
       <ul className="sidedrawer__links" onClick={click}>
+          <Link className="item" to="/">Home</Link>
           <Link className="item" to="/about">About us</Link>
           <Link className="item" to="/store">Store</Link>
           <Link className="item" to="/gmail">Gmail</Link>
