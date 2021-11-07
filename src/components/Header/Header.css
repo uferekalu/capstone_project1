@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 108px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header > span {
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 13px;
+}
+
+.header > span:hover {
+  text-decoration: underline;
+}
