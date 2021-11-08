@@ -39,11 +39,10 @@ const RightLinks = styled.div`
 `;
 
 const MenuLabel = styled.label`
-  background-color: grey;
+  background-color: white;
   position: fixed;
   top: 0.2rem;
   right: 1rem;
-  border-radius: 50%;
   height: 4rem;
   width: 4rem;
   cursor: pointer;
@@ -125,7 +124,7 @@ const Navbar = ({ click }) => {
         </RightLinks>
       </Nav>
       <MenuLabel htmlFor="navi-toggle" onClick={hamburgerClick}>
-        <Icon clicked={click}>&nbsp;</Icon>
+        <Icon clicked={menuClick}>&nbsp;</Icon>
       </MenuLabel>
     </>
   );
